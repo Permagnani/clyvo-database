@@ -1,0 +1,40 @@
+# TB_ALERTA
+
+## OBJETIVO
+Armazenar alertas preventivos e clínicos gerados pela plataforma com base em consultas, tratamentos e informações do pet.
+
+---
+
+## CAMPOS
+
+| CAMPO | TIPO | REGRA | DESCRIÇÃO |
+|---|---|---|---|
+| ID_ALERTA | NUMBER | PK | Identificador único do alerta. |
+| ID_PET | NUMBER | FK | Identificador do pet relacionado ao alerta. |
+| ID_CONSULTA | NUMBER | FK / NULL | Consulta relacionada ao alerta, quando aplicável. |
+| ID_TRATAMENTO | NUMBER | FK / NULL | Tratamento relacionado ao alerta, quando aplicável. |
+| DT_ALERTA | DATE | NOT NULL | Data e horário da geração do alerta. |
+| DS_TIPO_ALERTA | VARCHAR2(50) | NOT NULL | Tipo do alerta, como retorno atrasado, tratamento pendente ou agravamento clínico. |
+| DS_NIVEL_RISCO | VARCHAR2(20) | | Nível de risco, como baixo, moderado, alto ou crítico. |
+| DS_DESCRICAO | VARCHAR2(500) | | Descrição detalhada do alerta gerado. |
+| DS_STATUS | VARCHAR2(20) | | Status do alerta, como ativo, resolvido, ignorado ou em análise. |
+| ST_NOTIFICADO | CHAR(1) | CHECK (S/N) | Indica se o responsável ou veterinário foi notificado. |
+
+---
+
+## RELACIONAMENTOS
+
+TB_PET 1 → N TB_ALERTA
+
+TB_CONSULTA 1 → N TB_ALERTA
+
+TB_TRATAMENTO 1 → N TB_ALERTA
+
+---
+
+## REGRAS DE NEGÓCIO
+
+- Todo alerta deve estar vinculado a um pet.
+- Um alerta pode estar relacionado a uma consulta ou tratamento.
+- Alertas podem indicar retorno atrasado, tratamento pendente, agravamento clínico ou necessidade de reavaliação.
+- O sistema pode notificar o responsável ou veterinário.
