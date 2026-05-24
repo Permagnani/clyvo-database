@@ -1,7 +1,7 @@
 # TB_VINCULO_CLINICA_VET
 
 ## OBJETIVO
-Armazenar o vínculo entre veterinários e clínicas, permitindo representar profissionais autônomos, profissionais vinculados a uma ou mais clínicas e vínculos ativos ou encerrados.
+Armazenar o vínculo entre veterinários e clínicas, permitindo representar profissionais vinculados a uma ou mais clínicas e vínculos ativos ou encerrados.
 
 ---
 
@@ -9,11 +9,11 @@ Armazenar o vínculo entre veterinários e clínicas, permitindo representar pro
 
 | CAMPO | TIPO | REGRA | DESCRIÇÃO |
 |---|---|---|---|
-| ID_VINCULO | NUMBER | PK | Identificador único do vínculo entre clínica e veterinário. |
+| ID_VINCULO_CLINICA_VET | NUMBER | PK | Identificador único do vínculo entre clínica e veterinário. |
 | ID_VETERINARIO | NUMBER | FK | Identificador do veterinário vinculado. |
 | ID_CLINICA | NUMBER | FK | Identificador da clínica vinculada. |
-| DT_INICIO | DATE | NOT NULL | Data de início do vínculo entre o veterinário e a clínica. |
-| DT_FIM | DATE | | Data de encerramento do vínculo, caso exista. |
+| DT_INICIO_VINCULO | DATE | | Data de início do vínculo entre o veterinário e a clínica. |
+| DT_FIM_VINCULO | DATE | | Data de encerramento do vínculo, caso exista. |
 | DS_TIPO_VINCULO | VARCHAR2(30) | | Tipo de vínculo, como funcionário, prestador, plantonista ou parceiro. |
 | DS_STATUS | VARCHAR2(20) | | Status do vínculo, como ativo ou inativo. |
 

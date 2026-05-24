@@ -40,5 +40,5 @@ Uma consulta sempre pertence a um pet e a um veterinário. A clínica pode ser o
 - Toda consulta deve estar vinculada a um pet.
 - Toda consulta deve ter um veterinário responsável.
 - A clínica pode ser nula quando o atendimento for autônomo, domiciliar ou remoto.
-- A consulta pode gerar exames, tratamentos, retornos clínicos e eventos de saúde.
+- A consulta pode gerar tratamentos, alertas e retornos clínicos.
 - A data de retorno previsto ajuda no monitoramento da continuidade do cuidado.

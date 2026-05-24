@@ -40,5 +40,5 @@ TB_VETERINARIO 1 → N TB_TRATAMENTO
 - Um pet pode possuir vários tratamentos ao longo da vida.
 - Um tratamento deve estar vinculado a uma consulta.
 - O tratamento pode conter medicação, orientações clínicas ou acompanhamento sem medicamento.
-- A adesão ao tratamento poderá ser calculada com base nos registros de acompanhamento.
-- Tratamentos abandonados ou com baixa adesão podem gerar alertas preventivos.
+- O tratamento pode registrar informações relacionadas à adesão e evolução clínica do pet.
+- Tratamentos podem estar relacionados à geração de alertas clínicos e preventivos.

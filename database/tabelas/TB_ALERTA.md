@@ -36,5 +36,5 @@ TB_TRATAMENTO 1 → N TB_ALERTA
 
 - Todo alerta deve estar vinculado a um pet.
 - Um alerta pode estar relacionado a uma consulta ou tratamento.
-- Alertas podem indicar retorno atrasado, tratamento pendente, agravamento clínico ou necessidade de reavaliação.
+- Alertas podem indicar necessidade de acompanhamento, retorno clínico, tratamento pendente ou reavaliação veterinária.
 - O sistema pode notificar o responsável ou veterinário.

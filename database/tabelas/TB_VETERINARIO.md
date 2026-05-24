@@ -18,7 +18,7 @@ Armazenar os dados dos veterinários que realizam atendimentos aos pets, podendo
 | NR_TELEFONE | VARCHAR2(15) | | Telefone de contato do veterinário. |
 | DS_STATUS | VARCHAR2(20) | | Status do cadastro, como ativo ou inativo. |
 | DT_CADASTRO | DATE | DEFAULT SYSDATE | Data de cadastro do veterinário na plataforma. |
-| DT_ULTIMO_ACESSO | DATE | | Data do último acesso do veterinário à plataforma. |
+
 
 ---
 
